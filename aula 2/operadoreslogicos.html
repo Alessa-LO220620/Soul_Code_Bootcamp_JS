@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores logicos</title>
+    <script>
+        var sensor_incendio_1 = false;
+        var sensor_incendio_2 = false; 
+        var maquina_ligada = true; 
+        var alimentacao_eletrica = true;
+        var alarme = false;
+
+        //o alarme deve ser acionado se não houver alimentacao ou incendio em alguns dos andares
+
+        alarme = (sensor_incendio_2 || sensor_incendio_1 || alimentacao_eletrica) ? true : false;
+
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade_Switch_3</title>
+    <script>
+        // 3.O cardápio de uma lancheria é o seguinte:
+
+        // Especificação Código Preço
+        // Cachorro quente 100 1.20
+        // Bauru simples 101 1.30
+        // Bauru com ovo 102 1.50
+        // Hambúrger 103 1.20
+        // Cheeseburguer 104 1.30
+        // Refrigerante 105 1.00
+        // Implemente um programa que leia o código do item pedido, a quantidade e calcule o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item.
+
+        codigo = parseFloat(prompt("Digite o código do produto: "));
+        quantidade = parseFloat(prompt("Digite a quantidade: "));
+
+        switch (codigo) {
+            case 100:
+                document.write("Valor total de cachorro quente: R$ ", (quantidade * 1.20));
+                break;
+            case 101:
+                document.write("Valor total de bauru simples: R$ ", (quantidade * 1.30));
+                break;
+            case 102:
+                document.write("Valor total de bauru com ovo: R$ ", (quantidade * 1.50));
+                break;
+            case 103:
+                document.write("Valor total de hamburguer: R$ ", (quantidade * 1.20));
+                break;
+            case 104:
+                document.write("Valor total de cheeseburger: R$ ", (quantidade * 1.30));
+                break;
+            case 105:
+                document.write("Valor total de refrigerante: R$ ", (quantidade * 1.00));
+                break;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

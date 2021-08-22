@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repeticao 3</title>
+    <script>
+// 3 - Escrever um algoritmo que leia 10 números e conte quantos deles
+// estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve
+// informar ao usuário quando o numero lido um número negativo.
+
+var intervalo1 = 0;
+var intervalo2 = 0;
+var intervalo3 = 0;
+var intervalo4 = 0;
+
+for(i=1; i <= 10; i++){
+    
+    valor = parseInt(prompt("Digite um número de 0 a 100"));
+    if (valor < 0){
+        alert("Esse número é negativo, digite novamente");
+    }
+    if (valor >= 0 && valor <= 25){
+        intervalo1++
+    }
+    else if (valor >= 26 && valor <=50){
+        intervalo2++
+    }
+    else if(valor >=51 && valor <= 75){
+        intervalo3++
+    }
+    else if (valor >=76 && valor <=100){
+        intervalo4++
+    }
+}
+document.write(intervalo1, " ", intervalo2, " ", intervalo3, " ", intervalo4, " ");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

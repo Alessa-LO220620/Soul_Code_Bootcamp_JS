@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+class Alimentos{
+    constructor(salgado_local, doce_local){
+        this.salgado = salgado_local;
+        this.doce = doce_local;
+    }
+  
+    mostrar_Dados(){
+        var dados;
+        dados = this.salgado + " "+ this.doce;
+        return dados;
+    }
+}
+    var bolo = new Alimentos("Manteiga", "Chocolate");
+    var empada = new Alimentos("azeitona", "acucar"); 
+
+    document.write(bolo.mostrar_Dados(),"<br>");
+    document.write(empada.mostrar_Dados(), "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

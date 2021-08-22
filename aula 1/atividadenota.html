@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para classificação de alunos</title>
+    <script>
+        var nota_joao1 = 5;
+        var nota_joao2 = 7;
+        var nota_joao3 = 3;
+        var nota_maria1 = 7;
+        var nota_maria2 = 10;
+        var nota_maria3 = 10;
+        var nota_lulu1 = 6;
+        var nota_lulu2 = 10;
+        var nota_lulu3 = 8;
+        
+        
+        media_joao = (nota_joao1 + nota_joao2 + nota_joao3);
+        media_joao /= 3;
+        document.write("Média do Aluno João: " + media_joao, "<br/>");
+        
+        media_maria = (nota_maria1 + nota_maria2 + nota_maria3);
+        media_maria /= 3;
+        document.write("Média da aluna Maria: " + media_maria, "<br/>");
+                
+        media_lulu = (nota_lulu1 + nota_lulu2 + nota_lulu3);
+        media_lulu /= 3;
+        document.write("Media do aluno Lulu: " + media_lulu, "<br/>");
+              
+        document.write(media_joao <= 7 ? "João não está aprovado" : "João está aprovado", "<br/>");
+        document.write(media_maria <= 7 ? "Maria não está aprovada" : "Maria está aprovada", "<br/>");
+        document.write(media_lulu <= 7 ? "Lulu não está aprovado" : "Lulu está aprovado", "<br/>");
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

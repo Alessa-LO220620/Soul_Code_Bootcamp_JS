@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sena com Java Script</title>
+    <script>
+// <!-- Crie uma página que sorteia um conjunto de números válidos para um jogo da mega sena. Para a mega sena o mínimo são 6 números, todos contidos no intervalo de 1 a 60, incluindo ambos 1 e 60.
+
+// Nível 1: usando a função Math.random()
+
+// Nível 2: crie uma função random sua para gerar os números. -->
+    
+        function sorteia_um_numero(){
+            var num = 0;
+            while(true){
+                num = Math.round(Math.random()*100);
+                if(num > 0 && num <= 60)
+                return num;
+            }
+    
+        }
+    
+        function sortear_mega_sena(){
+            var aposta = [], num_teste;
+            document.write("Aposta válida: <br>")
+            for(i=0; i<6; i++){
+                num_teste = sorteia_um_numero()
+                if(aposta.some(elemento => elemento == num_teste))
+                document.write("Aposta invalida, numero repetido! <br>")
+                aposta.push(num_teste)
+            }
+        document.write(aposta)
+        }
+     sortear_mega_sena();
+    
+    </script>
+</head>
+
+<body> 
+    
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de JavaScript - Alessandra Souza</title>
+    <script>
+// 01.Informe qual código para realizar o que se pede nos itens abaixo:
+// a. Multiplique 10 com 5 e exiba o resultado;
+
+// var num1 = 10;
+// var num2 = 5;
+// multiplicacao = num1 * num2; 
+
+// document.write(multiplicacao);
+
+// // b. Divida 10 com 2 e exiba o resultado;
+// var num1 = 10;
+// var num2 = 2;
+// divisao = num1 / num2; 
+
+// document.write(divisao);
+
+// c. Exiba o restante quando for dividido 18 por 9;
+// var num1 = 18;
+// var num2 = 9;
+// resto = num1 / num2;
+
+// document.write(resto);
+
+// d. Use o operador de atribuição correto que resultará em x ser 15;
+// x = 10, y = 5; 
+// var x = 10;
+//       x += 5;
+//     document.write(x);
+
+// e. Use o operador de atribuição correto que resultará em x ser 50;
+// x = 10, y = 5;
+// var x = 10; 
+//     x *= 5; 
+//     document.write(x);
+
+
+
+// 02.Considerando a, b, c e d como variáveis com valores iniciais iguais a 5, 7, 3 e 9,
+// respectivamente, assinale a opção correta.
+
+// a. O resultado da expressão (a != 3 || b < 10 || c == 5) é falso.
+// b. O resultado da expressão (d > 8 && c == 3 || a >= 10) é verdadeiro.
+// c. O resultado da expressão !(d == 12 && a != 10) é falso.
+// d. O resultado da expressão (c == 4 || d <=6) && (a >= 5 && b !=9) || ( ! (a < 5) ) é
+// falso.
+// e. O resultado da expressão (a == 3 || b > 10 || d == 8 ) é verdadeiro.
+// REPOSTA : A;
+
+
+// 03. Escreva um script usando as 03 estruturas de repetição estudadas
+// (while, do...while, for), para escrever na tela de 0 a 1000.
+
+// var w = 0; 
+// while(w <= 1000){
+//     document.write(w, "<br/>");
+//     w++;
+// }
+
+// var d = 0; 
+// do{
+//     document.write(d, "<br/>");
+//     d++;
+// }while(d<=1000);
+
+// for(i=0; i<1000; i++){
+//     document.write(i, "<br/>");
+// }
+
+//04. Escreva a estrutura de condição para fazer as seguintes verificações:
+// a. Numero impar ou par;
+
+// var par_impar = 0;
+// par_impar =prompt("Digite um número:");
+
+// if(par_impar%2 == 0){
+//     alert("É um numero par!");
+// }else
+//     alert("É número ímpar!");
+
+
+// b. Numero é múltiplo de 3;
+
+// var multiplo = 0;
+// multiplo = prompt("Digite um número multiplo de 3:");
+
+// if(multiplo%3 == 0){
+//     alert("É multiplo de 3!");
+// }else
+//     alert("Não é multiplo de 3!");
+
+// c. Numero é primo;
+// numero = prompt("Digite um número para saber se é primo:");
+// function primo(numero) {
+//     for (var i = 2; i < numero; i++)
+//     if (numero % i === 0) return false;
+//     return numero !== 1;
+//     var resto = "O número" + primo(numero) + "é primo";
+// 	document.write(resto);
+
+// d. Numero1 é maior que numero2;
+// var numero_1 = 0;
+// var numero_2 = 0; 
+
+// numero_1 = prompt("Digite o primeiro valor: ");
+// numero_2 = prompt("Digite o segundo valor: ");
+
+// if (numero_1 < numero_2)
+//         document.write(numero_2, " é maior!");
+// else if (numero_2 < numero_1)
+//         document.write(numero_1," é maior!");
+
+// 05. Faça um script que pede dois inteiros e armazene eles em duas
+// variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o
+// antes e o depois em uma janela de alert ou document.
+
+// a = 0; 
+// b = 0;
+// aux = 0;
+
+// aux = prompt("Digite um número para A");
+// b = prompt("Digite um número para B");
+// document.write(" Valor de A é: ",a = b);
+// document.write(" Valor de B é: ", aux);
+
+// 06. Execute a função chamada myFunction.
+// function myFunction(){
+//     alert("Olá, Mundo!");
+// }
+// myFunction();
+
+// 07. Crie uma função que retorno a multiplicação de um numero por 2 e com
+// o resultado, eleve ao quadrado.
+// function multiplicacao(num1, num2){
+//     resultado = (num1*num2)/2;
+//     return num1 * num2;
+// }
+// alert(multiplicacao(10,50));
+// document.write(resultado);
+
+// 08. Utilizando as funções math faça o que se pede:
+// a. Use o método matemático correto para criar um número aleatório.
+
+// document.write(Math.random()*(100-50 + 1)) + 50;
+
+// b. Use o método matemático correto para retornar o maior número de 10 e
+// 20.
+
+// document.write(Math.max(2, 4, 6, 8, 10));
+// document.write(Math.max(10, 12, 14, 16, 18, 20));
+
+// c. Use o método matemático correto para arredondar um número para o
+// inteiro mais próximo.
+// document.write(Math.floor(6.04));
+
+// d. Use o método matemático correto para obter a raiz quadrada de 9.
+// document.write(Math.sqrt(9));
+
+// 09. Crie um script para alertar "Hello World" se x for maior que y, caso
+// contrário, alertar "Goodbye".
+
+// x = 10; 
+// y = 2; 
+
+// if ( x > y){
+//     alert("Hello Word");
+// }else
+//     alert("Goodbye");
+
+// 10. Usando switch case, faça um script que alertará "Olá" se a fruta for
+// "banana" e "Bem-vindo" se a fruta for "maçã".
+
+// fruta = parseFloat(prompt("Digite 1(Banana) ou 2(Maçã)"));
+// switch (fruta) {
+//             case (1):
+//                 document.write("Olá");
+//                 break;
+//             case (2):
+//                 document.write("Bem-Vindo");
+//                 break;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

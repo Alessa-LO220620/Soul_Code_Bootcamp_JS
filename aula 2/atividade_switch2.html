@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script>
+/*2.Um funcionário irá receber um aumento de acordo com o seu plano de
+trabalho, de acordo com a tabela abaixo:
+Plano Aumento
+A. 10%
+B. 15%
+C. 20%
+Faça um programa que leia o plano de trabalho e o salário atual de um funcionário e calcula e imprime o seu novo salário.*/
+
+categoria = prompt("Digite a categoria ", "A, B ou C");
+salario = parseFloat(prompt("Digite o salário"));
+
+switch(categoria){
+
+    case ("A"): //10%
+        document.write("Salário atual R$: ", salario, " aumento de 10%, após aumento:R$ ", (salario*1.1));
+        break;
+    case ("B"):
+        document.write("Salário atual R$: ", salario, " aumento de 15%, após aumento:R$ ", (salario*1.5));
+        break;
+    case ("C"):
+        document.write("Salário atual R$: ", salario, " aumento de 20%, após aumento:R$ ", (salario*1.2));
+        break;
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

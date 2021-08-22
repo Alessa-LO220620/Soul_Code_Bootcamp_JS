@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repeticao</title>
+    <script>
+/*1 - Desenvolver um algoritmo que leia a altura de 15 pessoas. Este programa deverá calcular e
+mostrar :
+a. A menor altura do grupo; 
+b. A maior altura do grupo; */
+
+var maior_altura = 0;
+var menor_altura = 3.0;
+
+for(var i=0; i < 15; i++){
+    var altura = parseFloat(prompt("Digite sua altura. Ex: 1.39"));
+    if(altura > maior_altura){
+        maior_altura = altura;
+    }
+    if(altura < menor_altura){
+        menor_altura = altura;
+    }
+}
+alert("Maior altura " + maior_altura);
+alert("Menor altura " + menor_altura);
+
+
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>
